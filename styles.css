@@ -18,7 +18,7 @@ html {
 
 /* Navbar Styles */
 nav {
-    padding: 2rem;
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -111,11 +111,18 @@ main .quote {
     font-size: 2rem;
     font-style: italic;
 }
-
-
 main .quote .author {
     font-size: 1.5rem;
     font-style: normal;
     font-weight: bold;
     text-align: right;
+}
+
+
+/* Footer Styles */
+footer {
+    padding: 0.5rem;
+    background-color: var(--secondary-color);
+    text-align: center;
+    font-weight: bold;
 }
