@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color: burlywood;
+}
+/* Navbar Styles */
 nav {
     padding: 20px;
     display: flex;
@@ -11,6 +15,11 @@ nav {
     align-items: center;
     background-color: bisque;
     font-size: large;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 nav ul {
@@ -24,12 +33,12 @@ nav ul li a {
     color: black;
 }
 
+/* Header Styles */
 header {
-    background-color: burlywood;
     padding: 2rem;
     text-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 1rem;
 }
 
@@ -41,6 +50,7 @@ header {
     text-align: left;
 }
 
+/* Button Styles */
 button {
     padding: 1rem 2rem;
     margin: 2rem 0;
@@ -55,4 +65,32 @@ button {
 
 button:hover {
     background-color: gray;
+}
+
+/* Main Body Styles */
+main {
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main-container {
+    margin: 2rem;
+    padding-top: 2rem;
+    /* max-width: 80%; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-item {
+    width: 4rem;
+    height: 4rem;
+    border: .25rem solid black;
+}
+
+.main-item p {
+    text-align: center;
+    padding-top: 4rem;
 }
