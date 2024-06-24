@@ -32,3 +32,22 @@ header {
     justify-content: space-between;
     gap: 20px;
 }
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center
+
+}
+
+button {
+    padding: 1rem 2rem;
+    margin: .5rem .25rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
