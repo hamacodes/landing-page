@@ -4,16 +4,18 @@
     box-sizing: border-box;
 }
 
+
+/* Document Styles */
 :root {
     --primary-color: burlywood;
     --secondary-color: bisque;
     --border-color: #ccc;
 }
-
 html {
     background-color: var(--primary-color);
-    /* padding: 0 4rem; */
 }
+
+
 /* Navbar Styles */
 nav {
     padding: 2rem;
@@ -23,22 +25,20 @@ nav {
     background-color: var(--secondary-color);
     font-size: large;
 }
-
 .nav-logo {
     font-size: 1.5rem;
     font-weight: bold;
 }
-
 nav ul {
     display: flex;
     list-style: none;
     gap: 20px;
 }
-
 nav ul li a {
     text-decoration: none;
     color: black;
 }
+
 
 /* Header Styles */
 header {
@@ -46,9 +46,7 @@ header {
     text-align: center;
     display: flex;
     justify-content: space-around;
-    gap: 1rem;
 }
-
 .header-left {
     display: flex;
     flex-direction: column;
@@ -56,6 +54,7 @@ header {
     gap: 20px;
     text-align: left;
 }
+
 
 /* Button Styles */
 button {
@@ -69,10 +68,10 @@ button {
     cursor: pointer;
     transition: background-color 0.3s;
 }
-
 button:hover {
     background-color: gray;
 }
+
 
 /* Main Body Styles */
 main {
@@ -82,7 +81,6 @@ main {
     flex-direction: column;
     text-align: center;
 }
-
 .main-container {
     margin: 2rem;
     padding-top: 2rem;
@@ -90,15 +88,14 @@ main {
     display: flex;
     justify-content: space-around;
 }
-
 .main-item {
     display: flex;
     flex-direction: column;
     width: 8rem;
     height: 8rem;
     border: .25rem solid black;
+    border-radius: 1rem;
 }
-
 .main-item p {
     text-align: center;
     padding-top: 8rem;
@@ -115,7 +112,6 @@ main {
     font-size: 2rem;
     font-style: italic;
 }
-
 .quote-author {
     font-size: 1.5rem;
     font-style: normal;
