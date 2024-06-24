@@ -1,9 +1,11 @@
 * {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
 nav {
-    padding: 0 20px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,4 +22,13 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     color: black;
+}
+
+header {
+    background-color: burlywood;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
