@@ -4,8 +4,14 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: burlywood;
+    --secondary-color: bisque;
+    --border-color: #ccc;
+}
+
 html {
-    background-color: burlywood;
+    background-color: var(--primary-color);
     /* padding: 0 4rem; */
 }
 /* Navbar Styles */
@@ -14,7 +20,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: bisque;
+    background-color: var(--secondary-color);
     font-size: large;
 }
 
@@ -108,7 +114,6 @@ main {
     text-align: center;
     font-size: 2rem;
     font-style: italic;
-    font-weight: normal;
 }
 
 .quote-author {
