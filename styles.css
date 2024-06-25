@@ -11,57 +11,58 @@
     --secondary-color: bisque;
     --border-color: #ccc;
 }
-html {
-    background-color: var(--primary-color);
-}
+
 
 
 /* Navbar Styles */
 nav {
     padding: 1rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: var(--secondary-color);
-    font-size: large;
+    justify-content: space-between;
+    background-color: var(--primary-color);
 }
-nav .logo {
-    font-size: 1.5rem;
+nav .nav-logo {
+    font-size: 2rem;
     font-weight: bold;
 }
 nav ul {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 2rem;
 }
 nav ul li a {
+    font-size: 1.5rem;
     text-decoration: none;
     color: black;
 }
 
 
-/* Header Styles */
-header {
-    padding: 2rem;
+/* Hero Styles */
+.hero {
+    padding: 4rem;
     display: flex;
     justify-content: space-around;
-    gap: 2rem;
+    background-color: var(--primary-color);
 }
-header .left {
+.hero .left {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.hero .left h1, .hero .left p {
     text-align: left;
-    gap: 1rem;
 }
 
 
 /* Button Styles */
 button {
-    padding: 1rem 0;
-    margin: 0;
+    padding: 1rem;
     font-size: 1rem;
     border-radius: 1rem;
+    width: 25%; /* 25% of parent container */
     background-color: black;
     color: white;
     border: none;
@@ -73,42 +74,41 @@ button:hover {
 }
 
 
-/* Main Body Styles */
-main {
-    background-color: white;
-    padding: 2rem 0;
+/* Services Styles */
+.services {
+    padding: 4rem;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
 }
-main .container {
-    margin: 2rem;
-    padding-top: 2rem;
+.services .container {
     display: flex;
     justify-content: space-around;
+    gap: 4rem;
 }
-main .container .item {
-    display: flex;
-    flex-direction: column;
+.services .container .item {
     width: 8rem;
     height: 8rem;
     border: .25rem solid black;
     border-radius: 1rem;
 }
-main .container .item p {
+.services .container .item p {
     text-align: center;
     padding-top: 8rem;
 }
+.services h1 {
+    padding: 2rem;
+}
 
 
-/* Main Quote Styles */
+/* Quote Styles */
 main .quote {
-    margin: 2rem;
-    padding: 2rem 4rem;
+    padding: 4rem;
+    /* width: 80%; */
     border-radius: 1rem;
     background-color: lightgray;
     text-align: center;
-    font-size: 2rem;
+    font-size: 4rem;
     font-style: italic;
 }
 main .quote .author {
@@ -121,8 +121,8 @@ main .quote .author {
 
 /* Footer Styles */
 footer {
-    padding: 0.5rem;
-    background-color: var(--secondary-color);
+    padding: 1rem;
+    background-color: var(--primary-color);
     text-align: center;
     font-weight: bold;
 }
