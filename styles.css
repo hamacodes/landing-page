@@ -7,11 +7,10 @@
 
 /* Document Styles */
 :root {
-    --primary-color: burlywood;
-    --secondary-color: bisque;
+    --primary-color: #2a2438;
+    --secondary-color: #5c5470;
     --border-color: #ccc;
 }
-
 
 
 /* Navbar Styles */
@@ -25,6 +24,7 @@ nav {
 nav .nav-logo {
     font-size: 2rem;
     font-weight: bold;
+    color: white;
 }
 nav ul {
     display: flex;
@@ -34,7 +34,7 @@ nav ul {
 nav ul li a {
     font-size: 1.5rem;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 
@@ -43,7 +43,7 @@ nav ul li a {
     padding: 4rem;
     display: flex;
     justify-content: space-around;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 .hero .left {
     display: flex;
@@ -54,6 +54,7 @@ nav ul li a {
 }
 .hero .left h1, .hero .left p {
     text-align: left;
+    color: white;
 }
 
 
@@ -63,7 +64,7 @@ button {
     font-size: 1rem;
     border-radius: 1rem;
     width: 25%; /* 25% of parent container */
-    background-color: black;
+    background-color: var(--primary-color);
     color: white;
     border: none;
     cursor: pointer;
@@ -74,8 +75,18 @@ button:hover {
 }
 
 
+/* Main Styles */
+main {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 /* Services Styles */
 .services {
+    margin: 4rem 0;
     padding: 4rem;
     display: flex;
     flex-direction: column;
@@ -102,16 +113,17 @@ button:hover {
 
 
 /* Quote Styles */
-main .quote {
+.quote {
+    margin: 4rem 0;
     padding: 4rem;
-    /* width: 80%; */
+    width: 80%;
     border-radius: 1rem;
     background-color: lightgray;
     text-align: center;
     font-size: 4rem;
     font-style: italic;
 }
-main .quote .author {
+.quote .author {
     font-size: 1.5rem;
     font-style: normal;
     font-weight: bold;
@@ -121,8 +133,10 @@ main .quote .author {
 
 /* Footer Styles */
 footer {
-    padding: 1rem;
+    margin-top: 4rem;
+    padding: 0.5rem;
     background-color: var(--primary-color);
     text-align: center;
     font-weight: bold;
+    color: white;
 }
